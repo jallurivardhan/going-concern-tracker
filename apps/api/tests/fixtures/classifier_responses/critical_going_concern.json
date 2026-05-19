@@ -1,0 +1,7 @@
+{
+  "has_going_concern_language": true,
+  "severity": "critical",
+  "quoted_language": "The accompanying financial statements have been prepared assuming the Company will continue as a going concern. As discussed in Note 2 to the financial statements, the Company has suffered recurring losses from operations and has a net capital deficiency that raise substantial doubt about its ability to continue as a going concern.",
+  "classification_confidence": 0.97,
+  "reasoning": "The auditor explicitly states there is 'substantial doubt about its ability to continue as a going concern' without any mitigating language about management's plans alleviating the doubt. This is a formal PCAOB AS 2415 going-concern opinion modifier."
+}

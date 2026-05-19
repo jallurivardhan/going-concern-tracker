@@ -1,0 +1,487 @@
+{
+  "version": "v1.0",
+  "eval_set_version": "v1.0",
+  "classifier_version": "v1.0",
+  "timestamp": "2026-05-17T23:59:42.521607",
+  "total_cases": 44,
+  "cases_with_db_match": 44,
+  "cases_without_db_match": 0,
+  "confusion_matrix": {
+    "critical": {
+      "critical": 6,
+      "elevated": 0,
+      "watch": 0,
+      "none": 0
+    },
+    "elevated": {
+      "critical": 0,
+      "elevated": 2,
+      "watch": 0,
+      "none": 0
+    },
+    "watch": {
+      "critical": 0,
+      "elevated": 0,
+      "watch": 0,
+      "none": 0
+    },
+    "none": {
+      "critical": 0,
+      "elevated": 0,
+      "watch": 0,
+      "none": 36
+    }
+  },
+  "true_positives": 8,
+  "true_negatives": 36,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "precision": "1.0000",
+  "recall": "1.0000",
+  "f1": "1.0000",
+  "accuracy": "1.0000",
+  "avg_confidence_when_correct": "0.9666",
+  "avg_confidence_when_wrong": "0",
+  "case_results": [
+    {
+      "case_id": "aapl_fy2025_2025-10-31",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "aapl_fy2024_2024-11-01",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "aapl_fy2023_2023-11-03",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "aapl_fy2022_2022-10-28",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "aapl_fy2021_2021-10-29",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "msft_fy2025_2025-07-30",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "msft_fy2024_2024-07-30",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "msft_fy2023_2023-07-27",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "msft_fy2022_2022-07-28",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "msft_fy2021_2021-07-29",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "bbby_original_fy2022_2023-06-14",
+      "expected_severity": "critical",
+      "actual_severity": "critical",
+      "matches_expected": true,
+      "expected_quoted_phrase": "substantial doubt",
+      "actual_quoted_phrase": "The Company has suffered recurring losses from operations and negative cash flows from operations that raise substantial doubt about its ability to continue as a going concern.",
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "bbby_original_fy2021_2022-04-21",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "bbby_original_fy2020_2021-04-22",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "bbby_original_fy2019_2020-04-29",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "bbby_original_fy2018_2019-04-30",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "tupperware_fy2022_2023-10-13",
+      "expected_severity": "critical",
+      "actual_severity": "critical",
+      "matches_expected": true,
+      "expected_quoted_phrase": "substantial doubt",
+      "actual_quoted_phrase": "Substantial Doubt about the Company's Ability to Continue as a Going Concern\n\nThe accompanying consolidated financial statements have been prepared assuming that the Company will continue as a going concern. As discussed in Note 1 to the consolidated financial statements, the Company has experienced",
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "tupperware_fy2021_2022-02-23",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "tupperware_fy2020_2021-03-10",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "tupperware_fy2019_2020-03-12",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "tupperware_fy2018_2019-02-26",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "byon_fy2025_2026-02-24",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "byon_fy2024_2025-02-25",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "byon_fy2023_2024-02-23",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "byon_fy2022_2023-02-24",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "byon_fy2021_2022-02-25",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "pton_fy2025_2025-08-07",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "pton_fy2024_2024-08-22",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "pton_fy2023_2023-08-23",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "pton_fy2022_2022-09-07",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "pton_fy2021_2021-08-27",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "bynd_fy2025_2026-04-09",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "bynd_fy2024_2025-03-05",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "bynd_fy2023_2024-03-01",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "bynd_fy2022_2023-03-01",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "bynd_fy2021_2022-03-02",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "wework_fy2022_2023-03-29",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "wework_fy2021_2022-03-17",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "wework_fy2020_2021-03-24",
+      "expected_severity": "none",
+      "actual_severity": "none",
+      "matches_expected": true,
+      "expected_quoted_phrase": null,
+      "actual_quoted_phrase": null,
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "spirit_fy2024_2025-03-03",
+      "expected_severity": "critical",
+      "actual_severity": "critical",
+      "matches_expected": true,
+      "expected_quoted_phrase": "substantial doubt",
+      "actual_quoted_phrase": "The Company's Ability to Continue as a Going Concern\n\nThe accompanying consolidated financial statements have been prepared assuming that the Company will continue as a going concern. As discussed in Note 1 to the financial statements, the Company has experienced recurring losses from operations and",
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "seritage_fy2024_2025-03-31",
+      "expected_severity": "elevated",
+      "actual_severity": "elevated",
+      "matches_expected": true,
+      "expected_quoted_phrase": "substantial doubt",
+      "actual_quoted_phrase": "Property rental income, which is the Company's primary source of operating cash flow, did not fully fund Obligations incurred during the year ended December 31, 2024. Obligations are projected to continue to exceed property rental income and the Company expects to fund such costs with a combination ",
+      "quote_contains_expected": false,
+      "notes": "Severity matches but expected phrase not in quote: 'substantial doubt'"
+    },
+    {
+      "case_id": "andme_fy2024_2025-06-11",
+      "expected_severity": "critical",
+      "actual_severity": "critical",
+      "matches_expected": true,
+      "expected_quoted_phrase": "substantial doubt",
+      "actual_quoted_phrase": "The accompanying consolidated financial statements have been prepared assuming that the Company will continue as a going concern. As discussed in Note 2 to the consolidated financial statements, the Company has incurred significant operating losses and filed for relief under Chapter 11 of Title 11 o",
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "wolfspeed_fy2025_2025-08-26",
+      "expected_severity": "critical",
+      "actual_severity": "critical",
+      "matches_expected": true,
+      "expected_quoted_phrase": "substantial doubt",
+      "actual_quoted_phrase": "Substantial Doubt About the Company's Ability to Continue as a Going Concern\n\nThe accompanying consolidated financial statements have been prepared assuming that the Company will continue as a going concern. As discussed in Note 2 to the consolidated financial statements, the Company, together with ",
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "spirit_fy2025_2026-03-16",
+      "expected_severity": "critical",
+      "actual_severity": "critical",
+      "matches_expected": true,
+      "expected_quoted_phrase": "substantial doubt",
+      "actual_quoted_phrase": "The accompanying consolidated financial statements have been prepared assuming that the Company will continue as a going concern. As discussed in Note 1 to the financial statements, the Company has experienced recurring losses from operations and filed for relief under Chapter 11 of title 11 of the ",
+      "quote_contains_expected": true,
+      "notes": ""
+    },
+    {
+      "case_id": "seritage_fy2025_2026-03-31",
+      "expected_severity": "elevated",
+      "actual_severity": "elevated",
+      "matches_expected": true,
+      "expected_quoted_phrase": "substantial doubt",
+      "actual_quoted_phrase": "The Company has suffered recurring losses from operations that raise substantial doubt about its ability to continue as a going concern. Management's plans in regard to these matters are also described in Note 1.",
+      "quote_contains_expected": true,
+      "notes": ""
+    }
+  ]
+}

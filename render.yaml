@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: going-concern-tracker-api
+    env: python
+    plan: free
+    region: oregon
+    rootDir: apps/api
+    buildCommand: pip install -e .
+    startCommand: uvicorn gct.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: LANGFUSE_PUBLIC_KEY
+        sync: false
+      - key: LANGFUSE_SECRET_KEY
+        sync: false
+      - key: LANGFUSE_HOST
+        sync: false
+      - key: SEC_USER_AGENT_EMAIL
+        sync: false
+      - key: FRONTEND_URL
+        sync: false

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white font-sans text-slate-900 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif tracking-tight;
+  }
+
+  p,
+  li {
+    @apply leading-relaxed;
+  }
+
+  a {
+    @apply text-slate-900 underline underline-offset-2 hover:text-slate-700;
+  }
+
+  ::selection {
+    @apply bg-slate-200;
+  }
+
+  /* Ligatures on serif headings */
+  h1,
+  h2,
+  h3 {
+    font-feature-settings:
+      "liga" 1,
+      "kern" 1;
+  }
+}

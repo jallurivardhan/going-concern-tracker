@@ -1,0 +1,7 @@
+{
+  "has_going_concern_language": true,
+  "severity": "elevated",
+  "quoted_language": "These conditions raise substantial doubt about the Company's ability to continue as a going concern. However, management has implemented a plan to alleviate the substantial doubt by raising additional capital through a private placement offering and reducing operating expenses.",
+  "classification_confidence": 0.88,
+  "reasoning": "The auditor acknowledges conditions raising substantial doubt, but explicitly notes that management's plans are expected to alleviate that doubt. The presence of mitigating language places this in the 'elevated' tier rather than 'critical'."
+}

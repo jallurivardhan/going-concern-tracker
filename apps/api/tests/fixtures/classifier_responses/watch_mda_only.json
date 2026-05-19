@@ -1,0 +1,7 @@
+{
+  "has_going_concern_language": true,
+  "severity": "watch",
+  "quoted_language": "Our audit procedures included assessing the appropriateness of the going concern basis of accounting used by management and, based on the audit evidence obtained, we have concluded that a material uncertainty exists that may cast significant doubt on the Company's ability to continue as a going concern.",
+  "classification_confidence": 0.61,
+  "reasoning": "Going concern risk is referenced in the context of audit procedures but does not constitute a formal PCAOB AS 2415 opinion modifier. The language casts doubt but is framed as an assessment rather than a qualified opinion."
+}
