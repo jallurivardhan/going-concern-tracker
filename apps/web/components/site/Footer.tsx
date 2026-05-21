@@ -79,7 +79,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/jalludevs/going-concern-tracker"
+                  href="https://github.com/jallurivardhan/going-concern-tracker"
                   target="_blank"
                   rel="noreferrer"
                   className="text-slate-600 no-underline hover:text-slate-900"
@@ -89,7 +89,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/jalludevs/going-concern-tracker"
+                  href="https://github.com/jallurivardhan/going-concern-tracker"
                   target="_blank"
                   rel="noreferrer"
                   className="text-slate-600 no-underline hover:text-slate-900"

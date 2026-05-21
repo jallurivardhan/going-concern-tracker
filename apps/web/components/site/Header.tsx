@@ -35,7 +35,7 @@ export function Header() {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/jalludevs/going-concern-tracker"
+                    href="https://github.com/jallurivardhan/going-concern-tracker"
                     target="_blank"
                     rel="noreferrer"
                     className="font-sans text-slate-700 no-underline hover:text-slate-900"

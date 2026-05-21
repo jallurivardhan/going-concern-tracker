@@ -177,7 +177,7 @@ export default async function MethodologyPage() {
       <section className="mt-10 border-t border-slate-100 pt-8">
         <p className="text-sm text-slate-600">
           <a
-            href="https://github.com/jalludevs/going-concern-tracker/blob/main/docs/methodology.md"
+            href="https://github.com/jallurivardhan/going-concern-tracker/blob/main/docs/methodology.md"
             target="_blank"
             rel="noreferrer"
             className="font-medium text-slate-900"
