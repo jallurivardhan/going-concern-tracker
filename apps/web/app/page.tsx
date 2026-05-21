@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { fetchFlags, fetchMethodology, fetchStats } from "@/lib/api";
 import { FlagCard } from "@/components/flags/FlagCard";
-import { SubscribeForm } from "@/components/subscribe/SubscribeForm";
 import type { Flag } from "@/lib/api";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -173,30 +172,10 @@ async function TrustSignals() {
           <div>
             <p className="font-serif text-base font-semibold text-slate-900">Free, no signup</p>
             <p className="mt-2 text-sm text-slate-600">
-              Browse and search freely. Optionally subscribe to a weekly digest &mdash; no account,
-              just an email.
+              Browse and search freely. No account, no paywall &mdash; every flag links straight to
+              the source filing.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ── Subscribe CTA (placeholder for Prompt 7) ──────────────────────────────────
-
-function SubscribeCTA() {
-  return (
-    <section className="border-t border-slate-100 bg-slate-50 py-10 md:py-16">
-      <div className="mx-auto max-w-xl px-4 text-center md:px-6">
-        <h2 className="font-serif text-2xl font-medium text-slate-900">Get the weekly digest</h2>
-        <p className="mt-3 text-slate-600">
-          Every Monday, a short email with new flags from the past week. No marketing, no signup
-          pages, just the data.
-        </p>
-
-        <div className="mt-6">
-          <SubscribeForm />
         </div>
       </div>
     </section>
@@ -211,7 +190,6 @@ export default function HomePage() {
       <Hero />
       <ExampleFlags />
       <TrustSignals />
-      <SubscribeCTA />
     </>
   );
 }
