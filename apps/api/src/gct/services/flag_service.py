@@ -80,11 +80,16 @@ def list_flags(
     since: date | None = None,
     limit: int = 20,
     cursor: str | None = None,
-    sort: str = "detected_at_desc",
+    sort: str = "filing_date_desc",
 ) -> FlagListResponse:
     """Paginated list of going-concern flags.
 
     Returns ``limit + 1`` rows internally to determine ``has_more``.
+
+    Sort options:
+      filing_date_desc  — newest filing first (default)
+      detected_at_desc  — newest detection first
+      detected_at_asc   — oldest detection first
     """
     # Default severity filter: exclude "none"
     if severity is None:
@@ -107,11 +112,22 @@ def list_flags(
     if since:
         stmt = stmt.where(GoingConcernFlag.detected_at >= since)
 
-    # Cursor (keyset)
+    # Cursor (keyset) — each branch decodes its own key type
     if cursor:
         after_key, after_id = decode_cursor(cursor)
-        after_dt = datetime.fromisoformat(after_key)
-        if sort == "detected_at_asc":
+        if sort == "filing_date_desc":
+            after_date = date.fromisoformat(after_key)
+            stmt = stmt.where(
+                or_(
+                    Filing.filing_date < after_date,
+                    and_(
+                        Filing.filing_date == after_date,
+                        GoingConcernFlag.id < uuid.UUID(after_id),
+                    ),
+                )
+            )
+        elif sort == "detected_at_asc":
+            after_dt = datetime.fromisoformat(after_key)
             stmt = stmt.where(
                 or_(
                     GoingConcernFlag.detected_at > after_dt,
@@ -121,7 +137,8 @@ def list_flags(
                     ),
                 )
             )
-        else:
+        else:  # detected_at_desc
+            after_dt = datetime.fromisoformat(after_key)
             stmt = stmt.where(
                 or_(
                     GoingConcernFlag.detected_at < after_dt,
@@ -133,9 +150,11 @@ def list_flags(
             )
 
     # Sort
-    if sort == "detected_at_asc":
+    if sort == "filing_date_desc":
+        stmt = stmt.order_by(Filing.filing_date.desc(), GoingConcernFlag.id.desc())
+    elif sort == "detected_at_asc":
         stmt = stmt.order_by(GoingConcernFlag.detected_at.asc(), GoingConcernFlag.id.asc())
-    else:
+    else:  # detected_at_desc
         stmt = stmt.order_by(GoingConcernFlag.detected_at.desc(), GoingConcernFlag.id.desc())
 
     stmt = stmt.limit(limit + 1)
@@ -150,8 +169,11 @@ def list_flags(
 
     next_cursor = None
     if has_more and rows:
-        last_flag = rows[-1][0]
-        next_cursor = encode_cursor(last_flag.detected_at, str(last_flag.id))
+        last_flag, last_filing = rows[-1][0], rows[-1][1]
+        if sort == "filing_date_desc":
+            next_cursor = encode_cursor(last_filing.filing_date.isoformat(), str(last_flag.id))
+        else:
+            next_cursor = encode_cursor(last_flag.detected_at, str(last_flag.id))
 
     return FlagListResponse(
         items=items,

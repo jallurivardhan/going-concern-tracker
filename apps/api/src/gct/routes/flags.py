@@ -35,7 +35,7 @@ def get_flags(
     since: Annotated[date | None, Query(description="Only flags detected on or after this ISO date")] = None,
     limit: Annotated[int, Query(ge=1, le=100, description="Page size (max 100)")] = 20,
     cursor: Annotated[str | None, Query(description="Opaque pagination cursor from previous response")] = None,
-    sort: Annotated[str, Query(description="detected_at_desc (default) or detected_at_asc")] = "detected_at_desc",
+    sort: Annotated[str, Query(description="filing_date_desc (default), detected_at_desc, or detected_at_asc")] = "filing_date_desc",
     db: Session = Depends(get_db),
 ) -> FlagListResponse:
     severity_list = [s.strip() for s in severity.split(",")] if severity else None
