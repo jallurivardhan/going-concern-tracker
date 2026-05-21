@@ -31,7 +31,7 @@ _CLASSIFIER_VERSION = "v1.0-claude-haiku-4-5"  # reflects current primary model
 _METHODOLOGY_VERSION = "v1.0"
 _EVAL_SET_VERSION = "v1.0"
 
-_REPORTS_DIR = Path(__file__).parents[4] / "eval" / "reports"
+_REPORTS_DIR = Path(__file__).parents[3] / "eval" / "reports"
 
 # Backfilled filings are ingested months/years after filing date; their
 # "minutes_to_detect" isn't meaningful.  Suppress it when > 7 days.
