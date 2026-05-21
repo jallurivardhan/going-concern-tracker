@@ -60,13 +60,13 @@ def get_stats(db: Session) -> StatsResponse:
         flag_summary.critical + flag_summary.elevated + flag_summary.watch
     )
 
-    # Most recent critical/elevated/watch flag
+    # Most recent critical flag — newest by filing date (hero section)
     recent_row = db.execute(
         select(GoingConcernFlag, Filing, Company)
         .join(Filing, GoingConcernFlag.filing_id == Filing.id)
         .join(Company, GoingConcernFlag.company_id == Company.id)
-        .where(GoingConcernFlag.severity.in_(_POSITIVE))
-        .order_by(GoingConcernFlag.detected_at.desc())
+        .where(GoingConcernFlag.severity == "critical")
+        .order_by(Filing.filing_date.desc(), GoingConcernFlag.detected_at.desc())
         .limit(1)
     ).first()
 
