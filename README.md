@@ -4,7 +4,7 @@
 
 A free public tracker of going-concern opinions in SEC filings. Every flag cited to source.
 
-**Live demo:** *(fill after deployment — see [docs/deployment.md](docs/deployment.md))*  
+**Live demo:** *(fill after deployment - see [docs/deployment.md](docs/deployment.md))*  
 **API docs:** `{backend-url}/api/docs`
 
 ![Architecture diagram](docs/images/architecture.svg)
@@ -154,10 +154,6 @@ Phase 3:
 - Foreign private issuer filings (20-F, 40-F)
 - Predictive risk scoring layered on going-concern signals
 
-## License
-
-MIT
-
 ## Credits
 
-Built by Vardhan Jalluri for AlgoFest 2026.
+Built by Vardhan Jalluri
